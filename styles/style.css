@@ -145,18 +145,21 @@ h2 {
     letter-spacing: 2px;
     text-transform: capitalize;
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 hr {
     width: 50px;
     height: 1px;
     background: #0C0C0E;
+    margin-bottom: 40px;
+    margin: 0 auto;
 }
 
 h3 {
     color: #000;
     font-family: 'Inter';
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -181,6 +184,10 @@ p {
     line-height: 40px;
 }
 
+section{
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
 .container {
     margin: 0 auto;
     max-width: 1400px;
@@ -193,7 +200,7 @@ p {
 .navbar-inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
@@ -205,7 +212,6 @@ p {
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 0.6px;
-    margin-right: 430px;
 }
 
 .navbar-menu {
@@ -214,8 +220,8 @@ p {
 
 .navbar-menu__items {
     display: flex;
-    margin-right: 40px;
     gap: 30px;
+    margin-right: 40px;
 }
 
 .navbar-menu__item {
@@ -227,14 +233,11 @@ p {
     line-height: 50px;
 }
 
-.navbar-menu__item:last-child {
-    margin-right: 0;
-}
-
 .navbar-icon {
     background-color: #0C0C0E;
     border: none;
     cursor: pointer;
+    
 }
 
 .navbar-icon__img {
@@ -282,9 +285,11 @@ p {
 .about-gallery__item {
     width: 450px;
     height: 560px;
-    margin-bottom: 40px;
 }
 
+.swiper-wrapper {
+    display: flex;
+}
 .fav__h2 {
     margin-top: 71px;
 }
@@ -308,6 +313,25 @@ p {
     height: 1px;
     background: #BB945F;
     margin-left: inherit;
+    margin-bottom: 20px;
+}
+
+.fav-content__h3{
+margin-bottom: 40px;
+}
+
+.radiobuttons {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 90px;
+}
+
+.radiobuttons__item {
+    color: #000;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+line-height: normal;
 }
 
 .fav-book {
