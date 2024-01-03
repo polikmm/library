@@ -184,14 +184,20 @@ p {
     line-height: 40px;
 }
 
-section{
+button {
+    cursor: pointer;
+}
+
+section {
     padding-top: 20px;
     margin-bottom: 40px;
 }
+
 .container {
     margin: 0 auto;
     max-width: 1400px;
 }
+
 .navbar {
     background: #0C0C0E;
     z-index: 1;
@@ -236,8 +242,6 @@ section{
 .navbar-icon {
     background-color: #0C0C0E;
     border: none;
-    cursor: pointer;
-    
 }
 
 .navbar-icon__img {
@@ -276,20 +280,57 @@ section{
     margin: 40px 0 20px;
 }
 
-.about-gallery {
-    box-sizing: border-box;
-    width: 100%;
+.about-gallery{
+    height: 560px;
+    width: 1400px;
+}
+
+.swiper {
+    display: flex;
+    gap: 25px;
     overflow: hidden;
 }
 
-.about-gallery__item {
-    width: 450px;
-    height: 560px;
+.swiper input {
+    display: none;
 }
 
-.swiper-wrapper {
-    display: flex;
+.swiper__item {
+    position: relative;
+    transition: 2s;
 }
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -35%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -68%;
+    
+}
+
+.paginations {
+    display: flex;
+    gap: 10px;
+    margin: 40px 686px auto;
+}
+
+.pagination {
+    cursor: pointer;
+    min-width: 16px;
+    min-height: 16px;
+    background-color: #bb945b;
+    border-radius: 50%;
+}
+
+.pagination:hover{
+    background-color: #0C0C0E;
+}
+
 .fav__h2 {
     margin-top: 71px;
 }
@@ -316,8 +357,8 @@ section{
     margin-bottom: 20px;
 }
 
-.fav-content__h3{
-margin-bottom: 40px;
+.fav-content__h3 {
+    margin-bottom: 40px;
 }
 
 .radiobuttons {
@@ -328,10 +369,10 @@ margin-bottom: 40px;
 
 .radiobuttons__item {
     color: #000;
-font-family: 'Inter';
-font-size: 20px;
-font-style: normal;
-line-height: normal;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
 }
 
 .fav-book {
@@ -407,10 +448,6 @@ line-height: normal;
     margin-top: 56px;
 }
 
-.coffee-shop__hr {
-    margin-bottom: 36px;
-}
-
 .coffee-shop__p {
     text-align: center;
     letter-spacing: 2px;
@@ -441,13 +478,6 @@ line-height: normal;
     align-items: center;
 }
 
-.coffee-shop__hr {
-    position: absolute;
-    right: 88px;
-    width: 100px;
-    background: #BB945F;
-}
-
 .coffee-shop__span {
     color: #000;
     font-family: 'Forum';
@@ -466,6 +496,13 @@ line-height: normal;
 
 .coffee-shop-card {
     width: 439px;
+}
+
+.coffee-shop-card__hr {
+    margin-right: 60px;
+    background: #BB945F;
+    width: 100px;
+    height: 1px;
 }
 
 .contacts__h4 {
@@ -520,6 +557,7 @@ line-height: normal;
 
 .membership-card-inner {
     border: 3px solid #BB945F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: #FFF;
     width: 555px;
     height: 361px;
@@ -529,6 +567,21 @@ line-height: normal;
 .membership-card-inner-form {
     background: #BB945F;
     padding: 20px 20px 0 20px;
+}
+
+.membership-card-inner__btn {
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 30px 154px 40px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
 }
 
 .membership-card__h4 {

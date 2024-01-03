@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Library</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
@@ -17,13 +19,14 @@
                 <h3 class="h3 navbar__logo">Brooklyn Public Library</h3>
                 <div class="navbar-menu">
                     <ul class="navbar-menu__items">
-                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__item">About</a></li>
-                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__item">Favorites</a></li>
-                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__item">Coffee shop</a></li>
-                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__item">Contacts</a></li>
-                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__item">Library Card</a></li>
+                        <li class="navbar-menu__item"><a href="#about" class="navbar-menu__item">About</a></li>
+                        <li class="navbar-menu__item"><a href="#fav" class="navbar-menu__item">Favorites</a></li>
+                        <li class="navbar-menu__item"><a href="#coffee-shop" class="navbar-menu__item">Coffee shop</a></li>
+                        <li class="navbar-menu__item"><a href="#contacts" class="navbar-menu__item">Contacts</a></li>
+                        <li class="navbar-menu__item"><a href="#membership" class="navbar-menu__item">Library Card</a></li>
                     </ul>
-                        <button class="navbar-icon"><img src="./styles/img/icon_profile.svg" class="navbar-icon__img"></button>
+                    <button class="navbar-icon"><img src="./styles/img/icon_profile.svg"
+                            class="navbar-icon__img"></button>
                 </div>
             </div>
         </div>
@@ -41,47 +44,47 @@
     <section class="about">
         <div class="container">
             <div class="about-content">
-                <h2 class="h2 about-content__h2">About</h2>
+                <h2 class="h2 about-content__h2"> <a href="#about" name="about">About</a></h2>
                 <hr class="about-content__hr">
-                <p class="p about-content__p">The Brooklyn Library is a free workspace, a large number of books and a cozy
+                <p class="p about-content__p">The Brooklyn Library is a free workspace, a large number of books and a
+                    cozy
                     coffee shop inside </p>
             </div>
-            <div class="about-gallery swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper__img">
-                            <img src="./styles/img/image 1.jpg" alt="" class="about-gallery__item">
-                        </div>
+            <div class="about-gallery" id="swiper-wrapper">
+                <div class="swiper" id="swiper">
+                    <input type="radio" name="radio__btn" id="radio1">
+                    <input type="radio" name="radio__btn" id="radio2">
+                    <input type="radio" name="radio__btn" id="radio3">
+
+                    <div class="swiper__item first">
+                        <img src="./styles/img/image 1.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img">
-                            <img src="./styles/img/image 2.jpg" alt="" class="about-gallery__item">
-                        </div>
+                    <div class="swiper__item">
+                        <img src="./styles/img/image 2.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img">
-                            <img src="./styles/img/image 3 (1).jpg" alt="" class="about-gallery__item">
-                        </div>
+                    <div class="swiper__item">
+                        <img src="./styles/img/image 3 (1).jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img">
-                            <img src="./styles/img/image 3 (2).jpg" alt="" class="about-gallery__item">
-                        </div>
+                    <div class="swiper__item">
+                        <img src="./styles/img/image 3 (2).jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img">
-                            <img src="./styles/img/image 3.jpg" alt="" class="about-gallery__item">
-                        </div>
+                    <div class="swiper__item">
+                        <img src="./styles/img/image 3.jpg" alt="">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="paginations">
+                <label for="radio1" class="pagination left"></label>
+                <label for="radio2" class="pagination center"></label>
+                <label for="radio3" class="pagination right"></label>
+            </div>
         </div>
     </section>
 
     <section class="fav">
         <div class="container">
             <div class="fav-inner">
-                <h2 class="h2 fav-inner__h2">Favorites</h2>
+                <h2 class="h2 fav-inner__h2"><a href="#fav" name="fav">Favorites</a></h2>
                 <hr class="fav-inner__hr hr">
                 <div class="fav-content">
                     <h3 class="h3 fav-content__h3">Pick favorites of season</h3>
@@ -362,8 +365,8 @@
     <section class="coffee-shop">
         <div class="container">
             <div class="coffee-shop-content">
-                <h2 class="h2 coffee-shop__h2">Coffee shop</h2>
-                <hr class="coffee-shop__hr hr">
+                <h2 class="h2 coffee-shop__h2"><a href="#coffee-shop" name="coffee-shop">Coffee shop</a></h2>
+                <hr class="hr coffee-shop__hr">
                 <p class="p coffee-shop__p">In our library, we have of cozy coffee shop, welcoming in customers with
                     frothy cappuccinos and friendly conversation.
                     you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also
@@ -423,7 +426,7 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts-inner">
-                <h2 class="h2 contacts__h2">Our Contacts</h2>
+                <h2 class="h2 contacts__h2"><a href="#contacts" name="contacts">Our Contacts</a></h2>
                 <hr class="hr contacts__hr">
                 <div class="contacts-inner-info">
                     <div class="conctacts-inner-info-content">
@@ -451,7 +454,7 @@
 
     <section class="membership">
         <div class="container">
-            <h2 class="h2 membership__h2">Digital Library Cards</h2>
+            <h2 class="h2 membership__h2"><a href="#membership" name="membership">Digital Library Cards</a></h2>
             <hr class="hr membership__hr">
             <div class="membership-inner">
                 <div class="membership-card">
@@ -506,5 +509,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
